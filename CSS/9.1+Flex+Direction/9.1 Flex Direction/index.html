@@ -13,9 +13,44 @@
     .container {
       color: white;
       border: 5px solid gold;
-      display: flex;
+      display:inline-flex;
+      flex-direction: row;
+      /* width: 7%; */
+      flex-wrap: wrap;
+    }
+    /* variant */
+    .container > *{
+      flex-basis: 100px;
+    }
+    
+    /* dont repeat yourself */
+    /* .red{
+     
+      flex-basis: 100px;
+      
     }
 
+    .orange{
+      flex-basis: 100px;
+    }
+    
+    .yellow{
+      flex-basis: 100px;
+    }
+    .green{
+      flex-basis: 100px;
+    }
+    .blue{
+      flex-basis: 100px;
+    }
+    .purple{
+      flex-basis: 100px;
+    }
+      
+    .indigo{
+      flex-basis: 100px;
+    } */
+      
     /*
 Select all the elements that are the direct
 children of the .container class.
@@ -27,7 +62,12 @@ children of the .container class.
     .green {background-color: #6ab04c;}
     .blue {background-color: #4834d4;}
     .indigo {background-color: #30336b;}
-    .purple {background-color: #be2edd;}
+    .purple {background-color: #be2edd;
+    order: 2;}
+
+    .green{
+      order: 1;
+    }
   </style>
 </head>
 
